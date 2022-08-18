@@ -2,7 +2,7 @@
     <channel>
         <title>Blog Hector Filipy</title>
         <link>https://hectorfilipy.github.io/</link>
-        <description>This is my cool site</description>
+        <description>Blog com conteudo DEVOPS</description>
         <generator>Hugo -- gohugo.io</generator><language>pt-BR</language><lastBuildDate>Thu, 18 Aug 2022 16:32:07 -0300</lastBuildDate>
             <atom:link href="https://hectorfilipy.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>

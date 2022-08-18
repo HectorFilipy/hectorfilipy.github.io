@@ -3,24 +3,7 @@
         <title>Blog Hector Filipy</title>
         <link>https://hectorfilipy.github.io/</link>
         <description>Blog com conteúdo DEVOPS</description>
-        <generator>Hugo -- gohugo.io</generator><language>pt-BR</language><lastBuildDate>Thu, 18 Aug 2022 16:32:07 -0300</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>pt-BR</language>
             <atom:link href="https://hectorfilipy.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>Meu Segundo Post</title>
-    <link>https://hectorfilipy.github.io/meu-segundo-post/</link>
-    <pubDate>Thu, 18 Aug 2022 16:32:07 -0300</pubDate>
-    <author>Author</author>
-    <guid>https://hectorfilipy.github.io/meu-segundo-post/</guid>
-    <description><![CDATA[Titulo Meu segundo Post teste de segundo post!
-#include &lt;iostrem&gt; int main( int argc, char ** argv){ str::cout &lt;&lt; &#34;Meu código\n&#34; return 0; } Teste do código acima para validar comandos.]]></description>
-</item>
-<item>
-    <title>Meu Primeiro Post</title>
-    <link>https://hectorfilipy.github.io/meu-primeiro-post/</link>
-    <pubDate>Thu, 18 Aug 2022 16:01:56 -0300</pubDate>
-    <author>Author</author>
-    <guid>https://hectorfilipy.github.io/meu-primeiro-post/</guid>
-    <description><![CDATA[Titulo 1 cd /nome/do/caminho teste 1 teste 2 teste 3]]></description>
-</item>
-</channel>
+        </channel>
 </rss>

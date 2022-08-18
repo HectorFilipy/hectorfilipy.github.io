@@ -12,7 +12,7 @@
     <author>Author</author>
     <guid>https://hectorfilipy.github.io/meu-segundo-post/</guid>
     <description><![CDATA[Titulo Meu segundo Post teste de segundo post!
-#include &lt;iostrem&gt; int main( int argc, char ** argv){ str::cout &lt;&lt; &#34;Meu código\n&#34; return 0; } Teste do código acima para validar comandos. ]]></description>
+#include &lt;iostrem&gt; int main( int argc, char ** argv){ str::cout &lt;&lt; &#34;Meu código\n&#34; return 0; } Teste do código acima para validar comandos.]]></description>
 </item>
 <item>
     <title>Meu Primeiro Post</title>

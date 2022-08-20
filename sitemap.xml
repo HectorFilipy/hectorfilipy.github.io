@@ -1,9 +1,21 @@
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    ><url>
-            <loc>https://hectorfilipy.github.io/</loc><lastmod>2022-08-18T20:27:47-03:00</lastmod></url><url>
-            <loc>https://hectorfilipy.github.io/posts/</loc><lastmod>2022-08-18T20:27:47-03:00</lastmod></url><url>
-            <loc>https://hectorfilipy.github.io/sobre-mim/</loc><lastmod>2022-08-18T20:27:47-03:00</lastmod></url><url>
-            <loc>https://hectorfilipy.github.io/categories/</loc></url><url>
-            <loc>https://hectorfilipy.github.io/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hectorfilipy.github.io/6-comandos-basicos-linux/</loc>
+    <lastmod>2022-08-20T17:33:39-03:00</lastmod>
+  </url><url>
+    <loc>https://hectorfilipy.github.io/</loc>
+    <lastmod>2022-08-20T17:33:39-03:00</lastmod>
+  </url><url>
+    <loc>https://hectorfilipy.github.io/posts/</loc>
+    <lastmod>2022-08-20T17:33:39-03:00</lastmod>
+  </url><url>
+    <loc>https://hectorfilipy.github.io/sobre-mim/</loc>
+    <lastmod>2022-08-18T20:27:47-03:00</lastmod>
+  </url><url>
+    <loc>https://hectorfilipy.github.io/categories/</loc>
+  </url><url>
+    <loc>https://hectorfilipy.github.io/tags/</loc>
+  </url>
+</urlset>

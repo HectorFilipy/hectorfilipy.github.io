@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
     <title class="pjax-title">6 Comandos Basicos Linux - Hector Filipy</title><meta name="Description" content="Conteúdos DEVOPS/SRE"><meta property="og:title" content="6 Comandos Basicos Linux" />
-<meta property="og:description" content="#6 Comandos Básicos do Linux
-Olá tudo bem?
+<meta property="og:description" content="6 Comandos Básicos do LinuxOlá tudo bem?
 Venho trazer para vocês alguns comandos básicos do linux!
 Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
 Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux." />
@@ -20,8 +19,7 @@ Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se
 <meta name="twitter:image" content="https://hectorfilipy.github.io/logo.png"/>
 
 <meta name="twitter:title" content="6 Comandos Basicos Linux"/>
-<meta name="twitter:description" content="#6 Comandos Básicos do Linux
-Olá tudo bem?
+<meta name="twitter:description" content="6 Comandos Básicos do LinuxOlá tudo bem?
 Venho trazer para vocês alguns comandos básicos do linux!
 Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
 Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux."/>
@@ -41,7 +39,7 @@ Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hectorfilipy.github.io\/6-comandos-basicos-linux\/"
-        },"genre": "posts","wordcount":  652 ,
+        },"genre": "posts","wordcount":  645 ,
         "url": "https:\/\/hectorfilipy.github.io\/6-comandos-basicos-linux\/","datePublished": "2022-08-20T17:43:26-03:00","dateModified": "2022-08-20T17:43:26-03:00","publisher": {
             "@type": "Organization",
             "name": "Hector Filipy"},"author": {
@@ -136,28 +134,37 @@ Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">Author</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="22-08-2022">22-08-2022</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="22-08-2022">22-08-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;652 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="22-08-2022">22-08-2022</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="22-08-2022">22-08-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;645 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>#6 Comandos Básicos do Linux</p>
-<p>Olá tudo bem?</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1---cd">1 - CD</a></li>
+    <li><a href="#2---cat">2 - CAT</a></li>
+    <li><a href="#3---touch">3 - TOUCH</a></li>
+    <li><a href="#4---uptime">4 - UPTIME</a></li>
+    <li><a href="#5---ls">5 - LS</a></li>
+    <li><a href="#6---pwd">6 - PWD</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="6-comandos-básicos-do-linux" class="headerLink">
+    <a href="#6-comandos-b%c3%a1sicos-do-linux" class="header-mark"></a>6 Comandos Básicos do Linux</h1><p>Olá tudo bem?</p>
 <p>Venho trazer para vocês alguns comandos básicos do linux!</p>
 <p>Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.</p>
 <p>Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux. A princípio parece muito assustador a ideia de abrir mão da interface gráfica(GUI) para alguns processos, porém a adaptação deve ser realizada aos poucos, visto que existem distros do Linux com mais foco em design, como o Mint, POP_OS e etc&hellip;</p>
 <p>Pensando em ajudá-lo nessa questão, selecionei uma série de comandos de nível básico para você começar a praticar e entener que não é um bicho de 7 cabeças. Ao longo do estudo, você perceberá que os comandos são comuns na rotina de qualquer usuários, Portanto fiquem bem atentos aos 6 comandos que mostro a seguir.</p>
-<p>##1 - CD</p>
-<p>Este comando básico do Linux é que mais utilizamos para explorar diretórios por meio do terminal, seu nome é <strong>Change Directory</strong> por isso do <strong>CD</strong>. O comando ja fala por si só, ele nos permite navegar pelas pastas, mas de diferentes maneiras utilize o cd &ndash;help para ver mais sobre o comando.</p>
+<h2 id="1---cd" class="headerLink">
+    <a href="#1---cd" class="header-mark"></a>1 - CD</h2><p>Este comando básico do Linux é que mais utilizamos para explorar diretórios por meio do terminal, seu nome é <strong>Change Directory</strong> por isso do <strong>CD</strong>. O comando ja fala por si só, ele nos permite navegar pelas pastas, mas de diferentes maneiras utilize o cd &ndash;help para ver mais sobre o comando.</p>
 <p>Como exemplo, podemos acessar um diretório facilmente ao digitar o comando <strong>cd</strong> seguido do caminho que deseja acessar.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /home
 </code></pre></div><p>Caso voce queira voltar um diretório antes é só digitar o <strong>..</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..
-</code></pre></div><p>##2 - CAT</p>
-<p>Uma das formas de criar arquivos por meio do terminal, sabemos que existem diferentes modos para isso, sendo um deles o comando <strong>cat</strong>. Com o cat, podemos tanto criar um ou mais arquivos quanto ver o conteúdo de um arquivo existente, entre outras coisas.</p>
+</code></pre></div><h2 id="2---cat" class="headerLink">
+    <a href="#2---cat" class="header-mark"></a>2 - CAT</h2><p>Uma das formas de criar arquivos por meio do terminal, sabemos que existem diferentes modos para isso, sendo um deles o comando <strong>cat</strong>. Com o cat, podemos tanto criar um ou mais arquivos quanto ver o conteúdo de um arquivo existente, entre outras coisas.</p>
 <p>Como exemplo vamos ver como ler o conteúdo de um arquivo (/home/user/lista.txt, no caso):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat /home/user/lista.txt
 
@@ -171,26 +178,26 @@ Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se
 </code></pre></div><p>Você consegue abrir quantos arquivos desejar, basta somente digitar o nome de cada um deles e o terminal exibirá.</p>
 <p>Vamos agora criar um arquivo, digite:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat texto.txt
-</code></pre></div><p>##3 - TOUCH</p>
-<p>Mais um comando que é possivel criar arquivos, que de fato nem sempre criamos arquivos inserindo conteúdos neles. Em casos assim, usar o cat não é a melhor opção, pois, como aprendemos acima, a ferramenta abre os campos automaticamente para o usuário digitar. Portanto o comando touch é a escolha mais apropriada nessas horas.</p>
+</code></pre></div><h2 id="3---touch" class="headerLink">
+    <a href="#3---touch" class="header-mark"></a>3 - TOUCH</h2><p>Mais um comando que é possivel criar arquivos, que de fato nem sempre criamos arquivos inserindo conteúdos neles. Em casos assim, usar o cat não é a melhor opção, pois, como aprendemos acima, a ferramenta abre os campos automaticamente para o usuário digitar. Portanto o comando touch é a escolha mais apropriada nessas horas.</p>
 <p>Como exemplo vamos digitar;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">touch texto1.txt texto2.txt texto3.txt
 </code></pre></div><p>Digitando <strong>touch &ndash;help</strong> é possível consultar todas as opções existentes para o comando.</p>
-<p>##4 - UPTIME</p>
-<p>Esta listado entre os comandos básicos do Linux, o <strong>uptime</strong> é de muito importânte para os administradores de sistemas. Em uma única linha, ele nos informa o horário atual, há quanto tempo o sistema operacional está rodando, quantos usuários estão logados, e o tempo médio de carregamento do sistema.</p>
+<h2 id="4---uptime" class="headerLink">
+    <a href="#4---uptime" class="header-mark"></a>4 - UPTIME</h2><p>Esta listado entre os comandos básicos do Linux, o <strong>uptime</strong> é de muito importânte para os administradores de sistemas. Em uma única linha, ele nos informa o horário atual, há quanto tempo o sistema operacional está rodando, quantos usuários estão logados, e o tempo médio de carregamento do sistema.</p>
 <p>o comando ficaria;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">uptime
 
 17:20:06 up  1:26,  <span class="m">2</span> users,  load average: 0,36, 0,43, 0,60
-</code></pre></div><p>##5 - LS</p>
-<p>O comando <strong>ls</strong> é utilizado para listar arquivos e diretórios do sistema. Se digitar o comando <strong>ls</strong> no terminal sem adicionar nenhuma opção, serão exibidos na tela todos os itens em formato básico.</p>
+</code></pre></div><h2 id="5---ls" class="headerLink">
+    <a href="#5---ls" class="header-mark"></a>5 - LS</h2><p>O comando <strong>ls</strong> é utilizado para listar arquivos e diretórios do sistema. Se digitar o comando <strong>ls</strong> no terminal sem adicionar nenhuma opção, serão exibidos na tela todos os itens em formato básico.</p>
 <p>Agora, se utilizarmos a opção <strong>-l</strong>, veremos os detalhes mencionados acima e outras informações, como data e hora de modificação e o proprietário do arquivo/diretório.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"> ls -l
 </code></pre></div><p>Mesmo assim ainda há arquivos que podem não aparecer nos resultados por conta deles serem ocultos. Para visualizarmos basta digitar <strong>ls -a</strong>.</p>
 <p>Se quiser descobrir mais recursos existentes no comando, é só digitar</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ls --help.
-</code></pre></div><p>##6 - PWD</p>
-<p>Por ultimo trago o comando <strong>pwd</strong> é comumente utilizado por administradores de sistemas para identificar o diretório atual. Ao digitarmos o comando, o terminal exibe o endereço completo do diretório. Exemplo:</p>
+</code></pre></div><h2 id="6---pwd" class="headerLink">
+    <a href="#6---pwd" class="header-mark"></a>6 - PWD</h2><p>Por ultimo trago o comando <strong>pwd</strong> é comumente utilizado por administradores de sistemas para identificar o diretório atual. Ao digitarmos o comando, o terminal exibe o endereço completo do diretório. Exemplo:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">pwd</span>
 
 /etc/apache2/

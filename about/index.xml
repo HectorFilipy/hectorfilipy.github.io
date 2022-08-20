@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Hector Filipy</title>
+    <link>https://hectorfilipy.github.io/about/</link>
+    <description>Recent content in Abouts on Hector Filipy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 18 Aug 2022 20:27:47 -0300</lastBuildDate><atom:link href="https://hectorfilipy.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sobre</title>
+      <link>https://hectorfilipy.github.io/about/sobre-mim/</link>
+      <pubDate>Thu, 18 Aug 2022 20:27:47 -0300</pubDate>
+      
+      <guid>https://hectorfilipy.github.io/about/sobre-mim/</guid>
+      <description>#Sobre Hector Filipy    Olá tudo bem?
+Aqui você saberá um pouco sobre mim.
+Meu nome é Hector Filipy tenho 30 anos, sou nordestino... mais precisamente do estado do Rio Grande do Norte/Natal e sou estudante de Redes de Computadores formado em técnico e agora cursando o tecnólogo. Comecei minha carreira como Analista/Devops/SRE como estagiário, fui promovido a Analista Devops e logo em seguida como coordenador de setor na Prefeitura Municipal de Parnamirim fazendo parte da equipe do GCTI - Grupo de Ciência e Tecnologia da Informação e Inovação, onde trabalhei administrando/implantando os servidores, com sistemas e serviços opensources.</description>
+    </item>
+    
+  </channel>
+</rss>

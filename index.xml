@@ -3,9 +3,21 @@
         <title>Hector Filipy</title>
         <link>https://hectorfilipy.github.io/</link>
         <description>Conteúdos DEVOPS/SRE</description>
-        <generator>Hugo -- gohugo.io</generator><language>pt-BR</language><lastBuildDate>Sat, 20 Aug 2022 17:43:26 -0300</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>pt-BR</language><lastBuildDate>Mon, 22 Aug 2022 19:42:23 -0300</lastBuildDate>
             <atom:link href="https://hectorfilipy.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Configurando Github Com Netrc</title>
+    <link>https://hectorfilipy.github.io/configurando-github-com-netrc/</link>
+    <pubDate>Mon, 22 Aug 2022 19:42:23 -0300</pubDate><author>
+        <name>Hector Filipy</name>
+    </author><guid>https://hectorfilipy.github.io/configurando-github-com-netrc/</guid>
+    <description><![CDATA[Configurando Git no .netrcVamos lá pessoal
+Aqui voce aprenderá:
+ Como fonfigurar o GitHub para não ficar pedindo a senha a caa push/pull  É muito importante dizer que existem outro metodos para realizar a autenticação, como por exemplo utilizar o SSH do git.
+ConfigurandoVamos criar um arquivo na pasta /home/seu-usuario
+touch .netrc Esse arquivo será criado e o .(ponto) deixará ele oculto
+OBS: É importante criar na pasta home do seu usuário ou do usuário que irá rodar o PUSH/PULL.]]></description>
+</item><item>
     <title>6 Comandos Basicos Linux</title>
     <link>https://hectorfilipy.github.io/6-comandos-basicos-linux/</link>
     <pubDate>Sat, 20 Aug 2022 17:43:26 -0300</pubDate><author>

@@ -3,7 +3,7 @@
         <title>Hector Filipy</title>
         <link>https://hectorfilipy.github.io/</link>
         <description>Conteúdos DEVOPS/SRE</description>
-        <generator>Hugo -- gohugo.io</generator><language>pt-BR</language><lastBuildDate>Mon, 22 Aug 2022 19:42:23 -0300</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 19:42:23 -0300</lastBuildDate>
             <atom:link href="https://hectorfilipy.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Configurando Github com .netrc</title>

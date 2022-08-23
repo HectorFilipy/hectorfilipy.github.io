@@ -1,8 +1,28 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>All Posts - Hector Filipy</title><link>https://hectorfilipy.github.io/posts/</link><description>All Posts | Hector Filipy</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 19:42:23 -0300</lastBuildDate><atom:link href="https://hectorfilipy.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Configurando Github com .netrc</title><link>https://hectorfilipy.github.io/configurando-github-com-netrc/</link><pubDate>Mon, 22 Aug 2022 19:42:23 -0300</pubDate><author><name>Hector Filipy</name></author><guid>https://hectorfilipy.github.io/configurando-github-com-netrc/</guid><description>Configurando Git no .netrcVamos lá pessoal
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Hector Filipy</title>
+        <link>https://hectorfilipy.github.io/posts/</link>
+        <description>All Posts | Hector Filipy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 19:42:23 -0300</lastBuildDate><atom:link href="https://hectorfilipy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Configurando Github com .netrc</title>
+    <link>https://hectorfilipy.github.io/configurando-github-com-netrc/</link>
+    <pubDate>Mon, 22 Aug 2022 19:42:23 -0300</pubDate><author>
+        <name>Hector Filipy</name>
+    </author><guid>https://hectorfilipy.github.io/configurando-github-com-netrc/</guid>
+    <description><![CDATA[Configurando Git no .netrcVamos lá pessoal
 Aqui voce aprenderá:
-Como fonfigurar o GitHub para não ficar pedindo a senha a cada push/pull É muito importante dizer que existem outro métodos para realizar a autenticação, como por exemplo utilizar o SSH do git. Mas hoje vamos aprender a configurar o .netrc para não precisar ficar pedindo o usuário e senha.
+ Como fonfigurar o GitHub para não ficar pedindo a senha a cada push/pull  É muito importante dizer que existem outro métodos para realizar a autenticação, como por exemplo utilizar o SSH do git. Mas hoje vamos aprender a configurar o .netrc para não precisar ficar pedindo o usuário e senha.
 ConfigurandoVamos criar um arquivo na pasta /home/seu-usuario
-touch .netrc Esse arquivo será criado e o .</description></item><item><title>6 Comandos Basicos Linux</title><link>https://hectorfilipy.github.io/6-comandos-basicos-linux/</link><pubDate>Sat, 20 Aug 2022 17:43:26 -0300</pubDate><author><name>Hector Filipy</name></author><guid>https://hectorfilipy.github.io/6-comandos-basicos-linux/</guid><description>6 Comandos Básicos do LinuxOlá tudo bem?
+touch .netrc Esse arquivo será criado e o .]]></description>
+</item><item>
+    <title>6 Comandos Basicos Linux</title>
+    <link>https://hectorfilipy.github.io/6-comandos-basicos-linux/</link>
+    <pubDate>Sat, 20 Aug 2022 17:43:26 -0300</pubDate><author>
+        <name>Hector Filipy</name>
+    </author><guid>https://hectorfilipy.github.io/6-comandos-basicos-linux/</guid>
+    <description><![CDATA[6 Comandos Básicos do LinuxOlá tudo bem?
 Quero mostrar para vocês alguns comandos básicos do linux!
 Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
-Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux.</description></item></channel></rss>
+Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux.]]></description>
+</item></channel>
+</rss>

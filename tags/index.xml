@@ -3,5 +3,26 @@
         <title>Tags - Tag - Conteúdos DEVOPS/SRE</title>
         <link>https://hectorfilipy.github.io/tags/</link>
         <description>Tags - Tag - Conteúdos DEVOPS/SRE</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://hectorfilipy.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Aug 2022 18:22:47 -0300</lastBuildDate><atom:link href="https://hectorfilipy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>AMAZON</title>
+    <link>https://hectorfilipy.github.io/tags/amazon/</link>
+    <pubDate>Fri, 26 Aug 2022 18:22:47 -0300</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://hectorfilipy.github.io/tags/amazon/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AWS</title>
+    <link>https://hectorfilipy.github.io/tags/aws/</link>
+    <pubDate>Fri, 26 Aug 2022 18:22:47 -0300</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://hectorfilipy.github.io/tags/aws/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>CLI</title>
+    <link>https://hectorfilipy.github.io/tags/cli/</link>
+    <pubDate>Fri, 26 Aug 2022 18:22:47 -0300</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://hectorfilipy.github.io/tags/cli/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

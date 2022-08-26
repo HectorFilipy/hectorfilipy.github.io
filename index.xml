@@ -1,30 +1,138 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>HectorFilipy</title>
         <link>https://hectorfilipy.github.io/</link>
-        <description>Conteúdos DEVOPS/SRE</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 19:42:23 -0300</lastBuildDate>
-            <atom:link href="https://hectorfilipy.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <description>Recent content on HectorFilipy</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 22 Aug 2022 19:42:23 -0300</lastBuildDate><atom:link href="https://hectorfilipy.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Configurando Github com .netrc</title>
+        <link>https://hectorfilipy.github.io/configurando-github-com-netrc/</link>
+        <pubDate>Mon, 22 Aug 2022 19:42:23 -0300</pubDate>
+        
+        <guid>https://hectorfilipy.github.io/configurando-github-com-netrc/</guid>
+        <description>&lt;h1 id=&#34;configurando-git-no-netrc&#34;&gt;Configurando Git no .netrc&lt;/h1&gt;
+&lt;p&gt;Vamos lá pessoal&lt;/p&gt;
+&lt;p&gt;Aqui voce aprenderá:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Como fonfigurar o GitHub para não ficar pedindo a senha a cada push/pull&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;É muito importante dizer que existem outro métodos para realizar a autenticação, como por exemplo utilizar o SSH do git. Mas hoje vamos aprender a configurar o .netrc para não precisar ficar pedindo o usuário e senha.&lt;/p&gt;
+&lt;h2 id=&#34;configurando&#34;&gt;Configurando&lt;/h2&gt;
+&lt;p&gt;Vamos criar um arquivo na pasta /home/seu-usuario&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;touch .netrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Esse arquivo será criado e o .(ponto) deixará ele oculto&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OBS: É importante criar na pasta &lt;strong&gt;home&lt;/strong&gt; do seu usuário ou do usuário que irá rodar o PUSH/PULL.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Após criado o arquivo iremos editar ele digitando o seguinte comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat .netrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;E iremos adicionar as seguintes linhas&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;machine github.com
+login seu-login
+password sua-senha
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;testando-a-configuração&#34;&gt;Testando a configuração&lt;/h2&gt;
+&lt;p&gt;Para realizar o teste e validar se está funcionando basta realizar o commit para subir as alterações e aplicar o push.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git add .
+git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;Comentário da alteração&amp;#34;&lt;/span&gt;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;OBS: No caso vamos aplicar a branch master, se voce estiver utilizando outra branch basta apontar para a branch desejada.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;entendendo-o-netrc&#34;&gt;Entendendo o .netrc&lt;/h2&gt;
+&lt;p&gt;O entendimento sobre o que se foi preenchido no arquivo .netrc é bem simples&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;machine endereço // Neste campo será adicionado o endereço &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; servidor pra onde deseja realizar o push/pull.
+login usuario // Neste campo será colocado o usuário a ser utilizado.
+password senha // Neste campo será colocado a senha &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; usuário acima.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
         <item>
-    <title>Configurando Github com .netrc</title>
-    <link>https://hectorfilipy.github.io/configurando-github-com-netrc/</link>
-    <pubDate>Mon, 22 Aug 2022 19:42:23 -0300</pubDate><author>
-        <name>Hector Filipy</name>
-    </author><guid>https://hectorfilipy.github.io/configurando-github-com-netrc/</guid>
-    <description><![CDATA[Configurando Git no .netrcVamos lá pessoal
-Aqui voce aprenderá:
- Como fonfigurar o GitHub para não ficar pedindo a senha a cada push/pull  É muito importante dizer que existem outro métodos para realizar a autenticação, como por exemplo utilizar o SSH do git. Mas hoje vamos aprender a configurar o .netrc para não precisar ficar pedindo o usuário e senha.
-ConfigurandoVamos criar um arquivo na pasta /home/seu-usuario
-touch .netrc Esse arquivo será criado e o .]]></description>
-</item><item>
-    <title>6 Comandos Basicos Linux</title>
-    <link>https://hectorfilipy.github.io/6-comandos-basicos-linux/</link>
-    <pubDate>Sat, 20 Aug 2022 17:43:26 -0300</pubDate><author>
-        <name>Hector Filipy</name>
-    </author><guid>https://hectorfilipy.github.io/6-comandos-basicos-linux/</guid>
-    <description><![CDATA[6 Comandos Básicos do LinuxOlá tudo bem?
-Quero mostrar para vocês alguns comandos básicos do linux!
-Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
-Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux.]]></description>
-</item></channel>
+        <title>Livros</title>
+        <link>https://hectorfilipy.github.io/livros/</link>
+        <pubDate>Mon, 22 Aug 2022 11:34:41 -0300</pubDate>
+        
+        <guid>https://hectorfilipy.github.io/livros/</guid>
+        <description>&lt;center&gt;
+&lt;img src=&#34;https://hectorfilipy.github.io/images/banner-livro.png&#34; alt=&#34;Livros que recomendo&#34;/&gt;
+&lt;/center&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/HectorFilipy/DescomplicandoDocker&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Livro Descomplicando Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://sre.google/sre-book/table-of-contents/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Livro SRE Google&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Sobre Mim</title>
+        <link>https://hectorfilipy.github.io/sobre-mim/</link>
+        <pubDate>Sat, 20 Aug 2022 19:22:35 -0300</pubDate>
+        
+        <guid>https://hectorfilipy.github.io/sobre-mim/</guid>
+        <description>&lt;center&gt;
+&lt;img src=&#34;https://hectorfilipy.github.io/images/banner-hector.png&#34; alt=&#34;Hector Filipy&#34;/&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;strong&gt;Olá tudo bem?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Aqui você saberá um pouco sobre mim.&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;Meu nome é &lt;b&gt;Hector Filipy&lt;/b&gt; tenho 30 anos, sou nordestino... mais precisamente do estado do Rio Grande do Norte/Natal e sou estudante de Redes de Computadores formado em técnico e agora cursando o tecnólogo. Comecei minha carreira como estagiário, fui promovido a Analista Devops e logo em seguida como coordenador de setor na Prefeitura Municipal de Parnamirim fazendo parte da equipe do &lt;b&gt;GCTI&lt;/b&gt; - Grupo de Ciência e Tecnologia da Informação e Inovação, onde trabalhei administrando/implantando os servidores, com sistemas e serviços opensources.&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;Atualmente, sou Analista Infraestrutura na Lojas Riachuelo, onde atuo nos incidentes críticos, criação de automação e observability, com o objetivo além de melhorar a confiabilidade dos sistemas, manter a disponibilidade sistemica.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>6 Comandos Basicos Linux</title>
+        <link>https://hectorfilipy.github.io/6-comandos-basicos-linux/</link>
+        <pubDate>Sat, 20 Aug 2022 17:43:26 -0300</pubDate>
+        
+        <guid>https://hectorfilipy.github.io/6-comandos-basicos-linux/</guid>
+        <description>&lt;h1 id=&#34;6-comandos-básicos-do-linux&#34;&gt;6 Comandos Básicos do Linux&lt;/h1&gt;
+&lt;p&gt;Olá tudo bem?&lt;/p&gt;
+&lt;p&gt;Quero mostrar para vocês alguns comandos básicos do linux!&lt;/p&gt;
+&lt;p&gt;Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.&lt;/p&gt;
+&lt;p&gt;Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux. A princípio parece muito assustador a ideia de abrir mão da interface gráfica(GUI) para alguns processos, porém a adaptação deve ser realizada aos poucos, visto que existem distros do Linux com mais foco em design, como o Mint, POP_OS e etc&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Pensando em ajudá-lo nessa questão, selecionei uma série de comandos de nível básico para você começar a praticar e entener que não é um bicho de 7 cabeças. Ao longo do estudo, você perceberá que os comandos são comuns na rotina de qualquer usuários, Portanto fiquem bem atentos aos 6 comandos que mostro a seguir.&lt;/p&gt;
+&lt;h2 id=&#34;1---cd&#34;&gt;1 - CD&lt;/h2&gt;
+&lt;p&gt;Este comando básico do Linux é que mais utilizamos para explorar diretórios por meio do terminal, seu nome é &lt;strong&gt;Change Directory&lt;/strong&gt; por isso do &lt;strong&gt;CD&lt;/strong&gt;. O comando ja fala por si só, ele nos permite navegar pelas pastas, mas de diferentes maneiras utilize o cd &amp;ndash;help para ver mais sobre o comando.&lt;/p&gt;
+&lt;p&gt;Como exemplo, podemos acessar um diretório facilmente ao digitar o comando &lt;strong&gt;cd&lt;/strong&gt; seguido do caminho que deseja acessar.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; /home
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Caso voce queira voltar um diretório antes é só digitar o &lt;strong&gt;..&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2---cat&#34;&gt;2 - CAT&lt;/h2&gt;
+&lt;p&gt;Uma das formas de criar arquivos por meio do terminal, sabemos que existem diferentes modos para isso, sendo um deles o comando &lt;strong&gt;cat&lt;/strong&gt;. Com o cat, podemos tanto criar um ou mais arquivos quanto ver o conteúdo de um arquivo existente, entre outras coisas.&lt;/p&gt;
+&lt;p&gt;Como exemplo vamos ver como ler o conteúdo de um arquivo (/home/user/lista.txt, no caso):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat /home/user/lista.txt
+
+1-Banana
+2-Maçã
+3-Uva
+4-Melão
+5-Pêra
+6-Abacaxi
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você consegue abrir quantos arquivos desejar, basta somente digitar o nome de cada um deles e o terminal exibirá.&lt;/p&gt;
+&lt;p&gt;Vamos agora criar um arquivo, digite:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat texto.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3---touch&#34;&gt;3 - TOUCH&lt;/h2&gt;
+&lt;p&gt;Mais um comando que é possivel criar arquivos, que de fato nem sempre criamos arquivos inserindo conteúdos neles. Em casos assim, usar o cat não é a melhor opção, pois, como aprendemos acima, a ferramenta abre os campos automaticamente para o usuário digitar. Portanto o comando touch é a escolha mais apropriada nessas horas.&lt;/p&gt;
+&lt;p&gt;Como exemplo vamos digitar;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;touch texto1.txt texto2.txt texto3.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Digitando &lt;strong&gt;touch &amp;ndash;help&lt;/strong&gt; é possível consultar todas as opções existentes para o comando.&lt;/p&gt;
+&lt;h2 id=&#34;4---uptime&#34;&gt;4 - UPTIME&lt;/h2&gt;
+&lt;p&gt;Esta listado entre os comandos básicos do Linux, o &lt;strong&gt;uptime&lt;/strong&gt; é de muito importânte para os administradores de sistemas. Em uma única linha, ele nos informa o horário atual, há quanto tempo o sistema operacional está rodando, quantos usuários estão logados, e o tempo médio de carregamento do sistema.&lt;/p&gt;
+&lt;p&gt;o comando ficaria;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;uptime
+
+17:20:06 up  1:26,  &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; users,  load average: 0,36, 0,43, 0,60
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;5---ls&#34;&gt;5 - LS&lt;/h2&gt;
+&lt;p&gt;O comando &lt;strong&gt;ls&lt;/strong&gt; é utilizado para listar arquivos e diretórios do sistema. Se digitar o comando &lt;strong&gt;ls&lt;/strong&gt; no terminal sem adicionar nenhuma opção, serão exibidos na tela todos os itens em formato básico.&lt;/p&gt;
+&lt;p&gt;Agora, se utilizarmos a opção &lt;strong&gt;-l&lt;/strong&gt;, veremos os detalhes mencionados acima e outras informações, como data e hora de modificação e o proprietário do arquivo/diretório.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; ls -l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Mesmo assim ainda há arquivos que podem não aparecer nos resultados por conta deles serem ocultos. Para visualizarmos basta digitar &lt;strong&gt;ls -a&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Se quiser descobrir mais recursos existentes no comando, é só digitar&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ls --help.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;6---pwd&#34;&gt;6 - PWD&lt;/h2&gt;
+&lt;p&gt;Por ultimo trago o comando &lt;strong&gt;pwd&lt;/strong&gt; é comumente utilizado por administradores de sistemas para identificar o diretório atual. Ao digitarmos o comando, o terminal exibe o endereço completo do diretório. Exemplo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;pwd&lt;/span&gt;
+
+/etc/apache2/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

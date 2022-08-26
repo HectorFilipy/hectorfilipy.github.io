@@ -1,170 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noodp" />
-    <title class="pjax-title">6 Comandos Basicos Linux - HectorFilipy</title><meta name="Description" content="Conteúdos DEVOPS/SRE"><meta property="og:title" content="6 Comandos Basicos Linux" />
-<meta property="og:description" content="6 Comandos Básicos do LinuxOlá tudo bem?
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='6 Comandos Básicos do Linux Olá tudo bem?
 Quero mostrar para vocês alguns comandos básicos do linux!
 Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
-Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://hectorfilipy.github.io/6-comandos-basicos-linux/" /><meta property="og:image" content="https://hectorfilipy.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-20T17:43:26-03:00" />
-<meta property="article:modified_time" content="2022-08-20T17:43:26-03:00" /><meta property="og:site_name" content="Hector Filipy" />
+Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux.'><title>6 Comandos Basicos Linux</title>
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://hectorfilipy.github.io/logo.png"/>
+<link rel='canonical' href='https://hectorfilipy.github.io/6-comandos-basicos-linux/'>
 
-<meta name="twitter:title" content="6 Comandos Basicos Linux"/>
-<meta name="twitter:description" content="6 Comandos Básicos do LinuxOlá tudo bem?
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='6 Comandos Basicos Linux'>
+<meta property='og:description' content='6 Comandos Básicos do Linux Olá tudo bem?
 Quero mostrar para vocês alguns comandos básicos do linux!
 Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
-Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux."/>
-<meta name="application-name" content="Hector Filipy">
-<meta name="apple-mobile-web-app-title" content="Hector Filipy">
+Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux.'>
+<meta property='og:url' content='https://hectorfilipy.github.io/6-comandos-basicos-linux/'>
+<meta property='og:site_name' content='HectorFilipy'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2022-08-20T17:43:26-03:00'/><meta property='article:modified_time' content='2022-08-20T17:43:26-03:00'/>
+<meta name="twitter:title" content="6 Comandos Basicos Linux">
+<meta name="twitter:description" content="6 Comandos Básicos do Linux Olá tudo bem?
+Quero mostrar para vocês alguns comandos básicos do linux!
+Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
+Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://hectorfilipy.github.io/6-comandos-basicos-linux/" /><link rel="next" href="https://hectorfilipy.github.io/configurando-github-com-netrc/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "6 Comandos Basicos Linux",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/hectorfilipy.github.io\/6-comandos-basicos-linux\/"
-        },"genre": "posts","wordcount":  645 ,
-        "url": "https:\/\/hectorfilipy.github.io\/6-comandos-basicos-linux\/","datePublished": "2022-08-20T17:43:26-03:00","dateModified": "2022-08-20T17:43:26-03:00","publisher": {
-            "@type": "Organization",
-            "name": "Hector Filipy"},"author": {
-                "@type": "Person",
-                "name": "Hector Filipy"
-            },"description": ""
-    }
-    </script></head>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
-        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
-        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
-        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
-        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
-        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
-        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
-    </script>
-    <div id="back-to-top"></div>
-    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="HectorFilipy"></a>
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">HectorFilipy</a></h1>
+            <h2 class="site-description"></h2>
         </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/livros/"> Livros </a><a class="menu-item" href="/sobre-mim/"> Sobre </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw"></i>
-                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
-                        <option value="light">Light</option>
-                        <option value="dark">Dark</option>
-                        <option value="black">Black</option>
-                        <option value="auto">Auto</option>
-                    </select>
-                </a></div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/posts/' >
+                
+                
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/livros/' >
+                
+                
+                
+                <span>Livros</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/sobre-mim/' >
+                
+                
+                
+                <span>Sobre</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
         </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/6-comandos-basicos-linux/">6 Comandos Basicos Linux</a>
+        </h2>
+    
+        
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="HectorFilipy"></a>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 20, 2022</time>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
             </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </div>
-                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/livros/" title="">Livros</a><a class="menu-item" href="/sobre-mim/" title="">Sobre</a><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw"></i>
-                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
-                    <option value="light">Light</option>
-                    <option value="dark">Dark</option>
-                    <option value="black">Black</option>
-                    <option value="auto">Auto</option>
-                </select>
-            </a></div>
-    </div>
+        
+    </footer>
+    
+
+    
+</div>
 </header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">6 Comandos Basicos Linux</h1><div class="post-meta">
-            <div class="post-meta-line">
-                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">Hector Filipy</a>
-                </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-20">2022-08-20</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-08-20">2022-08-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;645 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  kept="true">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#1---cd">1 - CD</a></li>
-    <li><a href="#2---cat">2 - CAT</a></li>
-    <li><a href="#3---touch">3 - TOUCH</a></li>
-    <li><a href="#4---uptime">4 - UPTIME</a></li>
-    <li><a href="#5---ls">5 - LS</a></li>
-    <li><a href="#6---pwd">6 - PWD</a></li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h1 id="6-comandos-básicos-do-linux" class="headerLink">
-    <a href="#6-comandos-b%c3%a1sicos-do-linux" class="header-mark"></a>6 Comandos Básicos do Linux</h1><p>Olá tudo bem?</p>
+
+    <section class="article-content">
+    
+    
+    <h1 id="6-comandos-básicos-do-linux">6 Comandos Básicos do Linux</h1>
+<p>Olá tudo bem?</p>
 <p>Quero mostrar para vocês alguns comandos básicos do linux!</p>
 <p>Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.</p>
 <p>Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux. A princípio parece muito assustador a ideia de abrir mão da interface gráfica(GUI) para alguns processos, porém a adaptação deve ser realizada aos poucos, visto que existem distros do Linux com mais foco em design, como o Mint, POP_OS e etc&hellip;</p>
 <p>Pensando em ajudá-lo nessa questão, selecionei uma série de comandos de nível básico para você começar a praticar e entener que não é um bicho de 7 cabeças. Ao longo do estudo, você perceberá que os comandos são comuns na rotina de qualquer usuários, Portanto fiquem bem atentos aos 6 comandos que mostro a seguir.</p>
-<h2 id="1---cd" class="headerLink">
-    <a href="#1---cd" class="header-mark"></a>1 - CD</h2><p>Este comando básico do Linux é que mais utilizamos para explorar diretórios por meio do terminal, seu nome é <strong>Change Directory</strong> por isso do <strong>CD</strong>. O comando ja fala por si só, ele nos permite navegar pelas pastas, mas de diferentes maneiras utilize o cd &ndash;help para ver mais sobre o comando.</p>
+<h2 id="1---cd">1 - CD</h2>
+<p>Este comando básico do Linux é que mais utilizamos para explorar diretórios por meio do terminal, seu nome é <strong>Change Directory</strong> por isso do <strong>CD</strong>. O comando ja fala por si só, ele nos permite navegar pelas pastas, mas de diferentes maneiras utilize o cd &ndash;help para ver mais sobre o comando.</p>
 <p>Como exemplo, podemos acessar um diretório facilmente ao digitar o comando <strong>cd</strong> seguido do caminho que deseja acessar.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /home
 </code></pre></div><p>Caso voce queira voltar um diretório antes é só digitar o <strong>..</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..
-</code></pre></div><h2 id="2---cat" class="headerLink">
-    <a href="#2---cat" class="header-mark"></a>2 - CAT</h2><p>Uma das formas de criar arquivos por meio do terminal, sabemos que existem diferentes modos para isso, sendo um deles o comando <strong>cat</strong>. Com o cat, podemos tanto criar um ou mais arquivos quanto ver o conteúdo de um arquivo existente, entre outras coisas.</p>
+</code></pre></div><h2 id="2---cat">2 - CAT</h2>
+<p>Uma das formas de criar arquivos por meio do terminal, sabemos que existem diferentes modos para isso, sendo um deles o comando <strong>cat</strong>. Com o cat, podemos tanto criar um ou mais arquivos quanto ver o conteúdo de um arquivo existente, entre outras coisas.</p>
 <p>Como exemplo vamos ver como ler o conteúdo de um arquivo (/home/user/lista.txt, no caso):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat /home/user/lista.txt
 
@@ -178,76 +225,163 @@ Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se
 </code></pre></div><p>Você consegue abrir quantos arquivos desejar, basta somente digitar o nome de cada um deles e o terminal exibirá.</p>
 <p>Vamos agora criar um arquivo, digite:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat texto.txt
-</code></pre></div><h2 id="3---touch" class="headerLink">
-    <a href="#3---touch" class="header-mark"></a>3 - TOUCH</h2><p>Mais um comando que é possivel criar arquivos, que de fato nem sempre criamos arquivos inserindo conteúdos neles. Em casos assim, usar o cat não é a melhor opção, pois, como aprendemos acima, a ferramenta abre os campos automaticamente para o usuário digitar. Portanto o comando touch é a escolha mais apropriada nessas horas.</p>
+</code></pre></div><h2 id="3---touch">3 - TOUCH</h2>
+<p>Mais um comando que é possivel criar arquivos, que de fato nem sempre criamos arquivos inserindo conteúdos neles. Em casos assim, usar o cat não é a melhor opção, pois, como aprendemos acima, a ferramenta abre os campos automaticamente para o usuário digitar. Portanto o comando touch é a escolha mais apropriada nessas horas.</p>
 <p>Como exemplo vamos digitar;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">touch texto1.txt texto2.txt texto3.txt
 </code></pre></div><p>Digitando <strong>touch &ndash;help</strong> é possível consultar todas as opções existentes para o comando.</p>
-<h2 id="4---uptime" class="headerLink">
-    <a href="#4---uptime" class="header-mark"></a>4 - UPTIME</h2><p>Esta listado entre os comandos básicos do Linux, o <strong>uptime</strong> é de muito importânte para os administradores de sistemas. Em uma única linha, ele nos informa o horário atual, há quanto tempo o sistema operacional está rodando, quantos usuários estão logados, e o tempo médio de carregamento do sistema.</p>
+<h2 id="4---uptime">4 - UPTIME</h2>
+<p>Esta listado entre os comandos básicos do Linux, o <strong>uptime</strong> é de muito importânte para os administradores de sistemas. Em uma única linha, ele nos informa o horário atual, há quanto tempo o sistema operacional está rodando, quantos usuários estão logados, e o tempo médio de carregamento do sistema.</p>
 <p>o comando ficaria;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">uptime
 
 17:20:06 up  1:26,  <span class="m">2</span> users,  load average: 0,36, 0,43, 0,60
-</code></pre></div><h2 id="5---ls" class="headerLink">
-    <a href="#5---ls" class="header-mark"></a>5 - LS</h2><p>O comando <strong>ls</strong> é utilizado para listar arquivos e diretórios do sistema. Se digitar o comando <strong>ls</strong> no terminal sem adicionar nenhuma opção, serão exibidos na tela todos os itens em formato básico.</p>
+</code></pre></div><h2 id="5---ls">5 - LS</h2>
+<p>O comando <strong>ls</strong> é utilizado para listar arquivos e diretórios do sistema. Se digitar o comando <strong>ls</strong> no terminal sem adicionar nenhuma opção, serão exibidos na tela todos os itens em formato básico.</p>
 <p>Agora, se utilizarmos a opção <strong>-l</strong>, veremos os detalhes mencionados acima e outras informações, como data e hora de modificação e o proprietário do arquivo/diretório.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"> ls -l
 </code></pre></div><p>Mesmo assim ainda há arquivos que podem não aparecer nos resultados por conta deles serem ocultos. Para visualizarmos basta digitar <strong>ls -a</strong>.</p>
 <p>Se quiser descobrir mais recursos existentes no comando, é só digitar</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ls --help.
-</code></pre></div><h2 id="6---pwd" class="headerLink">
-    <a href="#6---pwd" class="header-mark"></a>6 - PWD</h2><p>Por ultimo trago o comando <strong>pwd</strong> é comumente utilizado por administradores de sistemas para identificar o diretório atual. Ao digitarmos o comando, o terminal exibe o endereço completo do diretório. Exemplo:</p>
+</code></pre></div><h2 id="6---pwd">6 - PWD</h2>
+<p>Por ultimo trago o comando <strong>pwd</strong> é comumente utilizado por administradores de sistemas para identificar o diretório atual. Ao digitarmos o comando, o terminal exibe o endereço completo do diretório. Exemplo:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">pwd</span>
 
 /etc/apache2/
-</code></pre></div></div>
+</code></pre></div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 HectorFilipy
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
 
         
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
 
-<div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2022-08-20</span>
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="post-info-license"></div>
-        </div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="https://hectorfilipy.github.io/6-comandos-basicos-linux/" data-title="6 Comandos Basicos Linux" data-via="hectorfilipy"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="https://hectorfilipy.github.io/6-comandos-basicos-linux/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="https://hectorfilipy.github.io/6-comandos-basicos-linux/"><i class="fab fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://hectorfilipy.github.io/6-comandos-basicos-linux/" data-title="6 Comandos Basicos Linux" data-web><i class="fab fa-whatsapp fa-fw"></i></a></span>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
             </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
         </div>
+
     </div>
 
-    <div class="post-info-more">
-        <section class="post-tags"></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
 
-    <div class="post-nav">
-            <a href="/configurando-github-com-netrc/" class="next" rel="next" title="Configurando Github com .netrc">Configurando Github com .netrc<i class="fas fa-angle-right fa-fw"></i></a></div>
-</div>
-<div id="comments"></div></article></div>
-        </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Criado por Hugo</div><div class="footer-line"></div>
-            <div class="footer-line"></div>
-            <div class="footer-line">
-            </div>
-        </div></footer></div>
+            </main>
+    
 
-    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
-            <i class="fas fa-arrow-up fa-fw"></i>
-        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-            <i class="fas fa-comment fa-fw"></i>
-        </a>
-    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/fuse/fuse.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
-<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"useExtendedSearch":false},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
-        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript></div>
-</body>
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
 
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>

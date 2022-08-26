@@ -12,7 +12,7 @@
         <name>Hector Filipy</name>
     </author><guid>https://hectorfilipy.github.io/instalando-awscli/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/AWS-CLI.png" referrerpolicy="no-referrer">
+                <img src="/images/posts/AWS-CLI.png" referrerpolicy="no-referrer">
             </div>Instalando AWS CLIFala galerinha tudo bem?
 Hoje vamos aprender a instalar o AWS CLI no Linux&hellip; no final teremos um bônus para instalação no Windows e MacOS.
 Linux  Requisitos de Instalação:

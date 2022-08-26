@@ -9,9 +9,11 @@
     <pubDate>Fri, 26 Aug 2022 18:22:47 -0300</pubDate><author>
         <name>Hector Filipy</name>
     </author><guid>https://hectorfilipy.github.io/instalando-awscli/</guid>
-    <description><![CDATA[Instalando AWS CLIFala galerinha tudo bem?
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/AWS-CLI.png" referrerpolicy="no-referrer">
+            </div>Instalando AWS CLIFala galerinha tudo bem?
 Hoje vamos aprender a instalar o AWS CLI no Linux&hellip; no final teremos um bônus para instalação no Windows e MacOS.
 Linux  Requisitos de Instalação:
- Será necessário algum programa de descompactação de arquivos, aqui vamos usar o unzip, mas pode ser usado um equivalente. A AWS CLI precisará do glibc, groff e less. Geralmente já é nativo nas principais distribuições Linux.]]></description>
+ Será necessário algum programa de descompactação de arquivos, aqui vamos usar o unzip, mas pode ser usado um equivalente. A AWS CLI precisará do glibc, groff e less. Geralmente já é nativo nas principais distribuições Linux. A AWS CLI é utilizada na versão 64 bits, e pode ser utilizado nas distribuições recentes do CentOS, Fedora, Ubuntu, Amazon Linux 1, Amazon Linux 2 e Linux ARM.]]></description>
 </item></channel>
 </rss>

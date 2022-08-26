@@ -4,12 +4,14 @@
         <link>https://hectorfilipy.github.io/tags/comandos/</link>
         <description>COMANDOS - Tag - Conteúdos DEVOPS/SRE</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Aug 2022 17:43:26 -0300</lastBuildDate><atom:link href="https://hectorfilipy.github.io/tags/comandos/" rel="self" type="application/rss+xml" /><item>
-    <title>6 Comandos Basicos Linux</title>
+    <title>6 Comandos Básicos Linux</title>
     <link>https://hectorfilipy.github.io/6-comandos-basicos-linux/</link>
     <pubDate>Sat, 20 Aug 2022 17:43:26 -0300</pubDate><author>
         <name>Hector Filipy</name>
     </author><guid>https://hectorfilipy.github.io/6-comandos-basicos-linux/</guid>
-    <description><![CDATA[6 Comandos Básicos do LinuxOlá tudo bem?
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/COMANDOS-LINUX.png" referrerpolicy="no-referrer">
+            </div>6 Comandos Básicos do LinuxOlá tudo bem?
 Quero mostrar para vocês alguns comandos básicos do linux!
 Se você ainda está aprendendo e se familiarizando com o Linux, acredito que o uso da interface de linha de comandos(CLI) é uma das coisas que mais assusta. Por isso, aprender os comandos básicos do Linux é normalmente, o primeiro passo para começar a dominar o sistema.
 Para quem não sabe o que é um Terminal, resumindo em poucas palavras, trata-se de uma janela de comando para realizar tarefas com mais agilidade e possibilidades no Linux.]]></description>

@@ -9,7 +9,9 @@
     <pubDate>Mon, 22 Aug 2022 19:42:23 -0300</pubDate><author>
         <name>Hector Filipy</name>
     </author><guid>https://hectorfilipy.github.io/configurando-github-com-netrc/</guid>
-    <description><![CDATA[Configurando Git no .netrcVamos lá pessoal
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/GITHUB-NETRC.png" referrerpolicy="no-referrer">
+            </div>Configurando Git no .netrcVamos lá pessoal
 Aqui voce aprenderá:
  Como fonfigurar o GitHub para não ficar pedindo a senha a cada push/pull  É muito importante dizer que existem outro métodos para realizar a autenticação, como por exemplo utilizar o SSH do git. Mas hoje vamos aprender a configurar o .netrc para não precisar ficar pedindo o usuário e senha.
 ConfigurandoVamos criar um arquivo na pasta /home/seu-usuario

@@ -12,7 +12,7 @@
     <description><![CDATA[Instalando AWS CLIFala galerinha tudo bem?
 Hoje vamos aprender a instalar o AWS CLI no Linux&hellip; no final teremos um bônus para instalação no Windows e MacOS.
 Linux  Requisitos de Instalação:
- Será necessário algum programa de descompactação de arquivos, aqui vamos usar o unzip, mas pode ser usado um equivalente. A AWS CLI precisará do glibc, groff e less. Geralmente já é nativo nas principais distribuições Linux. A AWS CLI é utilizada na versão 64 bits, e pode ser utilizado nas distribuições recentes do CentOS, Fedora, Ubuntu, Amazon Linux 1, Amazon Linux 2 e Linux ARM.]]></description>
+ Será necessário algum programa de descompactação de arquivos, aqui vamos usar o unzip, mas pode ser usado um equivalente. A AWS CLI precisará do glibc, groff e less. Geralmente já é nativo nas principais distribuições Linux.]]></description>
 </item><item>
     <title>Configurando Github com .netrc</title>
     <link>https://hectorfilipy.github.io/configurando-github-com-netrc/</link>

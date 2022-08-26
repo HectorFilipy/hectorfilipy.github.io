@@ -1,7 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - Tag - HectorFilipy</title>
+        <title>Tags - Tag - Conteúdos DEVOPS/SRE</title>
         <link>https://hectorfilipy.github.io/tags/</link>
-        <description>Tags - Tag - HectorFilipy</description>
+        <description>Tags - Tag - Conteúdos DEVOPS/SRE</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://hectorfilipy.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
 </rss>

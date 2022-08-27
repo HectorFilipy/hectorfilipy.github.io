@@ -29,7 +29,7 @@
         function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
         function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
         function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
-        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
         let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
         getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
     </script>
@@ -37,7 +37,13 @@
     <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Conteúdos DEVOPS/SRE">Hector Filipy</a>
+            <a href="/" title="Conteúdos DEVOPS/SRE"><img
+        class="lazyload logo"
+        data-src="%3e"
+        data-srcset="%3e, %3e 1.5x, %3e 2x"
+        data-sizes="auto"
+        alt="&gt;"
+        title="&gt;"><span class="header-title-pre"> </span>Hector Filipy</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item active" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categorias </a><a class="menu-item" href="/livros/"> Livros </a><a class="menu-item" href="/sobre-mim/"> Sobre </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -66,7 +72,13 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Conteúdos DEVOPS/SRE">Hector Filipy</a>
+                <a href="/" title="Conteúdos DEVOPS/SRE"><img
+        class="lazyload logo"
+        data-src="%3e"
+        data-srcset="%3e, %3e 1.5x, %3e 2x"
+        data-sizes="auto"
+        alt="&gt;"
+        title="&gt;"><span class="header-title-pre"> </span>Hector Filipy</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -108,7 +120,7 @@
 <main class="main">
             <div class="container"><div class="page archive"><h2 class="single-title animate__animated animate__pulse animate__faster">All Tags</h2><div class="tag-cloud-tags"><a href="/tags/linux/">LINUX <sup>3</sup></a><a href="/tags/amazon/">AMAZON <sup>1</sup></a><a href="/tags/aws/">AWS <sup>1</sup></a><a href="/tags/cli/">CLI <sup>1</sup></a><a href="/tags/comandos/">COMANDOS <sup>1</sup></a><a href="/tags/git/">GIT <sup>1</sup></a><a href="/tags/github/">GITHUB <sup>1</sup></a><a href="/tags/netrc/">NETRC <sup>1</sup></a></div></div></div>
         </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Criado por Hugo</div><div class="footer-line"></div>
+        <div class="footer-container"><div class="footer-line">Criado por Hugo</div><div class="footer-line"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer"></a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
             </div>

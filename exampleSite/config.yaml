@@ -128,7 +128,7 @@ params:
     button:
       enable: true
       name: "Continuar"
-      url: "#"
+      url: "#contato"
       download: true
       newPage: false
     socialLinks:

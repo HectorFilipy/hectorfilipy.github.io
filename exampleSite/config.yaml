@@ -127,8 +127,8 @@ params:
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Continuar"
-      url: "#contato"
+      name: "Fale Comigo"
+      url: "#contact"
       download: false
       newPage: false
     socialLinks:

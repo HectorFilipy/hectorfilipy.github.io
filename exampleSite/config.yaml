@@ -179,7 +179,7 @@ params:
         companyUrl: "https://gcti.parnamirim.rn.gov.br"
         date: "Setembro 2017 - 6 meses"
         info: 
-          enable: false
+          enable: true
           content: Trabalhei como Analista de Infraestrutura de TI no setor de Redes do GCTI.
         #featuredLink:
         # enable: true
@@ -187,25 +187,23 @@ params:
         #  url: "https://example.com"
         content: "Realizei os trabalhos de Administrador de Servidores, Monitoração, Projeto de Redes."  
 
-
-
-      - job: "Coordenador de Infraestrutura e Redes"
-        company: "GCTI - Parnamrim"
-        companyUrl: "https://gcti.parnamirim.rn.gov.br"
-        date: "Janeiro 2018 - Junho 2021 - 3 anos e 6 meses"
+        - job: "Coordenador de Infraestrutura e Redes"
+          company: "GCTI - Parnamrim"
+          companyUrl: "https://gcti.parnamirim.rn.gov.br"
+          date: "Janeiro 2018 - Junho 2021 - 3 anos e 6 meses"
       # featuredLink:
       #   enable: true
       #   url: "https://example.com"
-        info:
-          enable: true
-          content: Eu trabalhei como Coordenador no setor de Redes no GCTI.
-        content: |
-          Durante minha posição de coordenador no setor exercia as seguintes atividades.
+          info:
+            enable: true
+            content: Eu trabalhei como Coordenador no setor de Redes no GCTI.
+          content: |
+            Durante minha posição de coordenador no setor exercia as seguintes atividades.
 
-          - Coordenar equipe de Devops e Telecom.
-          - Garantir a Segurança da Rede.
-          - Implantação CI/CD.
-          - Planejar e executar atividades voltadas a teste de invasãp nos sistemas e servidores.
+            - Coordenar equipe de Devops e Telecom.
+            - Garantir a Segurança da Rede.
+            - Implantação CI/CD.
+            - Planejar e executar atividades voltadas a teste de invasãp nos sistemas e servidores.
 
       - job: "Analista de Infraestrutura Junior"
         company: "Riachuelo"

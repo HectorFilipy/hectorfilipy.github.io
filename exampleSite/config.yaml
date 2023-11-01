@@ -121,7 +121,7 @@ params:
     title: "Hector Filipy."
     subtitle: "E eu sou Analista de Infraestrutura Pleno"
     content: "Entusiasta Devops/SRE, sempre estudando novas tecnologias para manter a infraestutura da aplicação eficiente."
-    image: /images/hero.svg
+    image: /images/hector.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false

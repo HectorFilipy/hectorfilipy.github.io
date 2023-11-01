@@ -384,11 +384,11 @@ params:
 
   # For translations
   terms:
-    read: "Read"
-    toc: "Table Of Contents"
+    read: "Ler"
+    toc: "Tabela de Conteúdo"
     copyright: "Todos os Direitos Reservados"
     pageNotFound: "Página não encontrada"
-    emailText: "Check out this site"
+    emailText: "Confira esse site"
 
   datesFormat:
     article: "Jan 2, 2006"

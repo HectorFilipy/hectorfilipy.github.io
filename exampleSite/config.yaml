@@ -119,8 +119,8 @@ params:
     enable: true
     intro: "Olá, eu sou"
     title: "Hector Filipy."
-    subtitle: "E eu sou Analista de Infraestrutura Pleno"
-    content: "Entusiasta Devops/SRE, sempre estudando novas tecnologias para manter a infraestutura da aplicação eficiente."
+    subtitle: "Entusiasta DEVOPS/SRE"
+    content: "Sempre estudando novas tecnologias para manter a infraestutura da aplicação eficiente."
     image: /images/hector.jpg
     bottomImage:
       enable: true

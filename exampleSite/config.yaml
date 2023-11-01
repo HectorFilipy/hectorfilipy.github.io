@@ -22,13 +22,13 @@ markup:
     renderer:
       unsafe: true
 
-#Menus:
-#  main:
-   #- identifier: blog
-   #  name: Blog
-   #  title: Blog posts
-   #  url: /blogs
-   #  weight: 1
+Menus:
+  main:
+   - identifier: blog
+     name: Blog
+     title: Blog posts
+     url: /blogs
+     weight: 1
    #- identifier: gallery
    #  name: Galerias
    #  title: Blog posts

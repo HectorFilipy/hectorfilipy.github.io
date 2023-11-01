@@ -8,7 +8,7 @@ tags:
   - Comandos
   - Linux
   - Tutorial
-image: /images/post.jpg
+image: /images/posts/COMANDOS-LINUX.png
 description: ""
 toc:
 ---
